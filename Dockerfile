@@ -18,7 +18,7 @@ RUN apt-get update \
 WORKDIR /opt
 
 COPY files/vpncloud_${VPNCLOUD_VERSION}_amd64.deb /opt/vpncloud_${VPNCLOUD_VERSION}_amd64.deb
-COPY files/vpncloud.yml /etc/vpncloud.yml
+COPY files/vpncloud.yml /etc/vpncloud/vpncloud.yml
 COPY entrypoint.sh /entrypoint.sh
 
 RUN dpkg -i vpncloud_${VPNCLOUD_VERSION}_amd64.deb
