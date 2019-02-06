@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-exec vpncloud --config /etc/vpncloud/vpncloud.yml
+exec vpncloud -v --config /etc/vpncloud/vpncloud.yml
